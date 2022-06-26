@@ -21,11 +21,11 @@
     - ###### 反射出一个对象
 
       -  通过反射机制，拿到类的class对象，然后创造对象。
-      - 拿到class对象的三种方式
-        - 类名.class
-        - 对象名.class
-        - Class.forName(全限定类名)
-      - 调用`newInstance()`方法来创建一个对象，但是只能使用无参构造方法来创建对象
+      -  拿到class对象的三种方式
+         - 类名.class
+         - 对象名.class
+         - Class.forName(全限定类名)
+      -  调用`newInstance()`方法来创建一个对象，但是只能使用无参构造方法来创建对象
 
       ```java
       Sheep sheep3 = (Sheep) Class.forName( "cn.codesheep.article.obj.Sheep" ).newInstance();
